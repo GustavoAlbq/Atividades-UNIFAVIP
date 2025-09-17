@@ -1,0 +1,101 @@
+#Questão 01
+for i in range(1, 11):
+    print(i)
+
+#Questão 02
+num = 2
+while num <= 50:
+    print(num)
+    num += 2
+
+#Questão 03
+num = int(input("Digite um número: "))
+for i in range(1, 11):
+    print(f"{num} x {i} = {num * i}")
+
+#Questão 04
+soma = 0
+for i in range(1, 101):
+    soma += i
+print("A soma de 1 até 100 é:", soma)
+
+#Questão 05
+import time
+
+for i in range(10, -1, -1):
+    print(i)
+    time.sleep(1)  
+print("Fogo!")
+
+#Questão 06
+texto = "Programação"
+for letra in texto:
+    print(letra)
+
+#Questão 07
+soma = 0
+for i in range(5):
+    nota = float(input(f"Digite a {i+1}ª nota: "))
+    soma += nota
+
+media = soma / 5
+print("A média das notas é:", media)
+
+#Questão 08
+maior = None
+for i in range(10):
+    num = int(input(f"Digite o {i+1}º número: "))
+    if maior is None or num > maior:
+        maior = num
+
+print("O maior número digitado foi:", maior)
+
+#Questão 09
+senha_correta = "seila"
+senha = ""
+
+while senha != senha_correta:
+    senha = input("Digite a senha: ")
+
+print("Acesso permitido!")
+
+#Questão 10
+palavra = input("Digite uma palavra: ").lower()
+vogais = "aeiou"
+contador = 0
+
+for letra in palavra:
+    if letra in vogais:
+        contador += 1
+
+print(f"A palavra tem {contador} vogais.")
+
+#Questão 11
+resultado = 1
+for i in range(5):
+    num = int(input(f"Digite o {i+1}º número: "))
+    resultado *= num
+
+print("O resultado da multiplicação é:", resultado)
+
+#Questão 12
+num = int(input("Digite um número: "))
+primo = True
+
+if num < 2:
+    primo = False
+else:
+    for i in range(2, num):
+        if num % i == 0:
+            primo = False
+            break
+
+if primo:
+  
+    print(f"{num} é primo.")
+else:
+    print(f"{num} não é primo.")
+
+#Questão 13
+for i in range(1, 21):
+    print(f"{i}² = {i**2}")
